@@ -6,8 +6,7 @@ import { useState } from "react";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="font-sans grid grid-rows-[auto_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      {/* Navbar Header */}
+    <div className="font-sans grid grid-rows-[auto_1fr_20px] items-center justify-items-center min-h-screen  pb-20 gap-16 ">      {/* Navbar Header */}
       <header className="row-start-1 w-full flex justify-between items-center py-4 px-6 bg-white dark:bg-black shadow-md rounded-xl mb-4 relative">
         {/* Hamburger & Logo */}
         <div className="flex items-center gap-2">
