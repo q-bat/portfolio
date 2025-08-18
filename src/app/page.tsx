@@ -6,24 +6,13 @@ import { useState } from "react";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="font-sans grid grid-rows-[auto_1fr_20px] items-center justify-items-center min-h-screen  pb-20 gap-16 ">      {/* Navbar Header */}
+    <div className="font-sans grid grid-rows-[auto_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-16">
+      {/* Navbar Header */}
       <header className="row-start-1 w-full flex justify-between items-center py-4 px-6 bg-white dark:bg-black shadow-md rounded-xl mb-4 relative">
-        {/* Hamburger & Logo */}
+        {/* Logo & Title */}
         <div className="flex items-center gap-2">
-          {/* Hamburger menu for mobile */}
-          <button
-            className="sm:hidden mr-2 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-            aria-label="Open menu"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <span className="block w-6 h-6 relative">
-              <span className={`absolute left-0 top-1 w-6 h-0.5 bg-black dark:bg-white transition-all ${menuOpen ? 'opacity-35' : ''}`}></span>
-              <span className={`absolute left-0 top-3 w-6 h-0.5 bg-black dark:bg-white transition-all ${menuOpen ? 'opacity-35' : ''}`}></span>
-              <span className={`absolute left-0 top-5 w-6 h-0.5 bg-black dark:bg-white transition-all ${menuOpen ? 'opacity-35' : ''}`}></span>
-            </span>
-          </button>
-          <img src="/next.svg" alt="Logo" width={40} height={40} className="dark:invert" />
-          <span className="font-bold text-lg tracking-wide">My Portfolio</span>
+          <img src="./next.svg" alt="Logo" width={40} height={40} className="dark:invert" />
+          <span className="font-bold text-lg tracking-wide">Quinn Battle</span>
         </div>
         {/* Desktop Nav */}
         <nav className="hidden sm:block">
@@ -34,9 +23,21 @@ export default function Home() {
             <li><a href="#contact" className="hover:text-blue-600 transition-colors">Contact</a></li>
           </ul>
         </nav>
+        {/* Hamburger menu for mobile (moved to right) */}
+        <button
+          className="sm:hidden ml-2 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          aria-label="Open menu"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span className="block w-6 h-6 relative">
+            <span className={`absolute left-0 top-1 w-6 h-0.5 bg-black dark:bg-white transition-all ${menuOpen ? 'opacity-35' : ''}`}></span>
+            <span className={`absolute left-0 top-3 w-6 h-0.5 bg-black dark:bg-white transition-all ${menuOpen ? 'opacity-35' : ''}`}></span>
+            <span className={`absolute left-0 top-5 w-6 h-0.5 bg-black dark:bg-white transition-all ${menuOpen ? 'opacity-35' : ''}`}></span>
+          </span>
+        </button>
         {/* Mobile Nav Drawer */}
         {menuOpen && (
-          <nav className="absolute left-0 top-full w-48 bg-white dark:bg-black shadow-lg rounded-b-xl z-10 sm:hidden">
+          <nav className="absolute right-0 top-full w-48 bg-white dark:bg-black shadow-lg rounded-b-xl z-10 sm:hidden">
             <ul className="flex flex-col gap-4 p-4 text-base font-medium">
               <li><a href="#home" className="hover:text-blue-600 transition-colors" onClick={() => setMenuOpen(false)}>Home</a></li>
               <li><a href="#about" className="hover:text-blue-600 transition-colors" onClick={() => setMenuOpen(false)}>About</a></li>
