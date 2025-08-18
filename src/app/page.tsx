@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[auto_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-16">
       {/* Navbar Header */}
-      <header className="row-start-1 w-full flex justify-between items-center py-4 px-6 bg-white dark:bg-black shadow-md rounded-xl mb-4 relative">
+      <header className="row-start-1 w-full flex justify-between items-center py-2 px-4 bg-white dark:bg-black shadow-md  mb-4 relative">
         {/* Logo & Title */}
-        <div className="flex items-center gap-2">
-          <img src="./next.svg" alt="Logo" width={40} height={40} className="dark:invert" />
+        <div className="flex items-center gap-x-4">
+          <img className="rounded-full" src="./QB-Professional.jpg" alt="Pic of Quinn" width={40} height={40} />
           <span className="font-bold text-lg tracking-wide">Quinn Battle</span>
         </div>
         {/* Desktop Nav */}
@@ -25,7 +25,7 @@ export default function Home() {
         </nav>
         {/* Hamburger menu for mobile (moved to right) */}
         <button
-          className="sm:hidden ml-2 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="sm:hidden ml-2 p-2 rounded focus:outline-none "
           aria-label="Open menu"
           onClick={() => setMenuOpen(!menuOpen)}
         >
@@ -49,11 +49,11 @@ export default function Home() {
       </header>
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <img
-        className="dark:invert"
-        src="./next.svg"
-        alt="Next.js logo"
-        width={180}
-        height={38}
+        className="rounded-full"
+        src="./QB-Professional.jpg"
+        alt="Quinn Professional pic"
+        width={300}
+        height={300}
         loading="eager"
         />
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
@@ -76,9 +76,9 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <img
               className="dark:invert"
-              src="/vercel.svg"
+              src="./vercel.svg"
               alt="Vercel logomark"
               width={20}
               height={20}
