@@ -6,9 +6,9 @@ import { useState } from "react";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="font-sans grid grid-rows-[auto_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-16">
+  <div className="font-sans grid grid-rows-[auto_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-8">
       {/* Navbar Header */}
-      <header className="row-start-1 w-full flex justify-between items-center py-2 px-4 bg-white dark:bg-black shadow-md  mb-4 relative">
+      <header className="row-start-1 w-full flex justify-between items-center py-2 px-4 bg-white dark:bg-black shadow-md relative">
         {/* Logo & Title */}
         <div className="flex items-center gap-x-4">
           <img className="rounded-full" src="./QB-Professional.jpg" alt="Pic of Quinn" width={40} height={40} />
@@ -56,7 +56,7 @@ export default function Home() {
         height={300}
         loading="eager"
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
+        <ol className="font-mono text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
@@ -65,7 +65,7 @@ export default function Home() {
             .
           </li>
           <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
+            {/*Save and see your changes instantly. */}
           </li>
         </ol>
 
