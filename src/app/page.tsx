@@ -50,11 +50,9 @@ export default function Home() {
       <main className="flex top-20 grid sm:grid-cols-2 gap-8 px-8 row-start-2 justify-start items-start w-full max-w-6xl mx-auto">
         <div className="bg-gray-400 rounded-xl p-4 flex flex-row items-start gap-4">
           <img
-            className="rounded-full"
+            className="rounded-full h-64 w-64 sm:h-80 sm:w-80"
             src="./QB-Professional.jpg"
             alt="Quinn Professional pic"
-            width={300}
-            height={300}
             loading="eager"
           />
           <div className="text-lg">
