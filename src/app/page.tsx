@@ -6,9 +6,9 @@ import { useState } from "react";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-  <div className=" font-sans grid grid-rows-[auto_1fr_20px] items-center justify-items-center min-h-screen pb-20 gap-8">
+  <div className="font-sans grid grid-rows-[auto_1fr_20px] min-h-screen pb-20 gap-8">
       {/* Navbar Header */}
-      <header className="row-start-1 w-full flex justify-between items-center py-2 px-4 bg-white dark:bg-black shadow-md relative">
+      <header className="sticky top-0 row-start-1 w-full flex justify-between items-center py-2 px-4 bg-white dark:bg-black shadow-md relative">
         {/* Logo & Title */}
         <div className="flex items-center gap-x-4">
           <img className="rounded-full" src="./QB-Professional.jpg" alt="Pic of Quinn" width={40} height={40} />
@@ -47,8 +47,8 @@ export default function Home() {
           </nav>
         )}
       </header>
-      <main className=" fixed top-20 grid grid-cols-1 sm:grid-cols-2 gap-8 row-start-2  sm:items-start w-full max-w-5xl px-4 mx-auto">
-        <div className=" flex flex-col items-center sm:items-start gap-8">
+      <main className="flex top-20 grid sm:grid-cols-2 gap-8 px-8 row-start-2 justify-start items-start w-full max-w-6xl mx-auto">
+        <div className="bg-gray-400 rounded-xl p-4 flex flex-row items-start gap-4">
           <img
             className="rounded-full"
             src="./QB-Professional.jpg"
@@ -57,6 +57,9 @@ export default function Home() {
             height={300}
             loading="eager"
           />
+          <div className="text-lg">
+            <a>Software Developer</a>
+          </div>
         </div>
         <div className="flex flex-col gap-4 items-center sm:items-start">
           <div className="flex gap-4 items-center flex-col sm:flex-row">
