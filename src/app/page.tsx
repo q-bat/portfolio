@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="font-sans grid grid-rows-[auto_1fr_20px] min-h-screen pb-20 gap-6">
+    <div className="font-sans grid grid-rows-[auto_1fr_20px] min-h-screen pb-20 gap-6 w-full">
       {/* Navbar Header */}
       <header className="sticky top-0 row-start-1 w-full flex justify-between items-center py-2 px-4 bg-white dark:bg-black shadow-md relative">
         {/* Logo & Title */}
@@ -47,9 +47,9 @@ export default function Home() {
           </nav>
         )}
       </header>
-      <main className="flex top-20 grid gap-4 px-6 row-start-2 justify-start items-start w-full max-w-6xl mx-auto">
+      <main className="flex top-20 grid gap-4 px-6 row-start-2 items-center sm:justify-start sm:items-start w-full max-w-6xl mx-auto">
         <div>
-          <div className="bg-gray-400 rounded-xl p-3 float-left mr-6 mb-4 min-w-md max-h-96 flex items-center gap-2">
+          <div className="bg-gray-400 rounded-xl p-3 sm:float-left sm:mr-6 mb-4 min-w-[20px] md:min-w-md max-h-96 flex items-center gap-2">
             <img
               className="rounded-full h-40 w-40 sm:h-80 sm:w-80"
               src="./QB-Professional.jpg"
