@@ -57,8 +57,8 @@ export default function Home() {
               loading="eager"
             />
             <div className="flex flex-col justify-center items-center w-full h-full p-3">
-              <span className="text-3xl sm:text-4xl font-semibold">Quinn Battle</span>
-              <span className="text-lg font-semibold">Software Developer</span>
+              <span className="text-2xl sm:text-4xl font-semibold">Quinn Battle</span>
+              <span className="text-md font-semibold">Software Developer</span>
             </div>
           </div>
           <div>
