@@ -47,9 +47,9 @@ export default function Home() {
           </nav>
         )}
       </header>
-      <main className="flex top-20 grid gap-4 px-6 row-start-2 items-center sm:justify-start sm:items-start w-full max-w-6xl mx-auto">
+      <main className="flex grid gap-4 px-4 row-start-2 items-center justify center md:justify-start md:items-start w-full max-w-6xl mx-auto">
         <div>
-          <div className="bg-gray-400 rounded-xl p-3 sm:float-left sm:mr-6 mb-4 min-w-[20px] md:min-w-md max-h-96 flex items-center gap-2">
+          <div className="flex items-center  md:float-left gap-2 p-3 sm:mr-6 mb-4 bg-gray-400 rounded-xl min-w-[20px] md:min-w-md max-w-full sm:max-w-full max-h-96 ">
             <img
               className="rounded-full h-40 w-40 sm:h-80 sm:w-80"
               src="./QB-Professional.jpg"
@@ -57,6 +57,7 @@ export default function Home() {
               loading="eager"
             />
             <div className="flex flex-col justify-center items-center w-full h-full p-3">
+              <span className="text-3xl sm:text-4xl font-semibold">Quinn Battle</span>
               <span className="text-lg font-semibold">Software Developer</span>
             </div>
           </div>
