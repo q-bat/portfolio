@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[auto_1fr_20px] min-h-screen pb-20 gap-6 w-full">
       {/* Navbar Header */}
-      <header className="sticky top-0 row-start-1 w-full flex justify-between items-center py-2 px-4 bg-white dark:bg-black shadow-md relative">
+      <header className="sticky top-0 row-start-1 w-full flex justify-between items-center py-2 px-4 bg-blue-200 dark:bg-slate-900 shadow-md relative">
         {/* Logo & Title */}
         <div className="flex items-center gap-x-4">
           <img className="rounded-full" src="./QB-Professional.jpg" alt="Pic of Quinn" width={40} height={40} />
@@ -37,7 +37,7 @@ export default function Home() {
         </button>
         {/* Mobile Nav Drawer */}
         {menuOpen && (
-          <nav className="absolute right-0 top-full w-48 bg-white dark:bg-black shadow-lg rounded-b-xl z-10 sm:hidden">
+          <nav className="absolute right-0 top-full w-48 bg-blue-200 dark:bg-slate-900 shadow-lg rounded-b-xl z-10 sm:hidden">
             <ul className="flex flex-col gap-4 p-4 text-base font-medium">
               <li><a href="#home" className="hover:text-blue-600 transition-colors" onClick={() => setMenuOpen(false)}>Home</a></li>
               <li><a href="#about" className="hover:text-blue-600 transition-colors" onClick={() => setMenuOpen(false)}>About</a></li>
@@ -49,7 +49,7 @@ export default function Home() {
       </header>
       <main className="flex grid gap-4 px-4 row-start-2 items-center justify center md:justify-start md:items-start w-full max-w-6xl mx-auto">
         <div>
-          <div className="flex items-center  md:float-left gap-2 p-3 sm:mr-6 mb-4 bg-gray-400 rounded-xl min-w-[20px] md:min-w-md max-w-full sm:max-w-full max-h-96 ">
+          <div className="flex items-center md:float-left gap-2 p-3 sm:mr-6 mb-4 bg-blue-100 dark:bg-slate-700 rounded-xl min-w-[20px] md:min-w-md max-w-full sm:max-w-full max-h-96 ">
             <img
               className="rounded-full h-40 w-40 sm:h-80 sm:w-80"
               src="./QB-Professional.jpg"
