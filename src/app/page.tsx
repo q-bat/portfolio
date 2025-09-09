@@ -6,9 +6,9 @@ import { useState } from "react";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="font-sans grid grid-rows-[auto_1fr_20px] min-h-screen pb-20 gap-6 w-full">
+    <div className="font-sans grid grid-rows-[auto_1fr_20px] min-h-screen pb-10 gap-6 w-full">
       {/* Navbar Header */}
-      <header className="sticky top-0 row-start-1 w-full flex justify-between items-center py-2 px-4 bg-blue-200 dark:bg-slate-900 shadow-md relative">
+      <header className="sticky top-0 row-start-1 flex justify-between items-center py-2 px-4 bg-blue-200 dark:bg-slate-900 shadow-md relative">
         {/* Logo & Title */}
         <div className="flex items-center gap-x-4">
           <img className="rounded-full" src="./QB-Professional.jpg" alt="Pic of Quinn" width={40} height={40} />
@@ -47,7 +47,7 @@ export default function Home() {
           </nav>
         )}
       </header>
-      <main className="flex grid gap-4 px-4 row-start-2 items-center justify center md:justify-start md:items-start w-full max-w-6xl mx-auto">
+      <main className="flex grid gap-4 px-4 row-start-2 items-center justify center md:justify-start md:items-start w-full max-w-7xl mx-auto">
         <div>
           <div className="flex items-center md:float-left gap-2 p-3 sm:mr-6 mb-4 bg-blue-100 dark:bg-slate-700 rounded-xl min-w-[20px] md:min-w-md max-w-full sm:max-w-full max-h-96 ">
             <img
@@ -77,6 +77,14 @@ export default function Home() {
             Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
             alias consequatur aut perferendis doloribus asperiores repellat.
           </div>
+        </div>
+        <div className="items-center justify-center w-full md:w-3/4 lg:w-2/3">
+          <img
+            className="rounded-xl"
+            src=".\Part-time-res.png"
+            alt="Quinn Resume"
+            loading="eager"
+          />
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
