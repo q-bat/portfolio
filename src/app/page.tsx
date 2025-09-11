@@ -47,8 +47,9 @@ export default function Home() {
           </nav>
         )}
       </header>
-      <main className="flex grid gap-4 px-4 row-start-2 items-center justify center md:justify-start md:items-start w-full max-w-7xl mx-auto">
-        <div>
+      <main className="flex grid gap-4 row-start-2 items-center justify-center w-full">
+        {/* Home */}
+        <div className="md:justify-start md:items-start max-w-7xl mx-auto px-4">
           <div className="flex items-center md:float-left gap-2 p-3 sm:mr-6 mb-4 bg-blue-100 dark:bg-slate-700 rounded-xl min-w-[20px] md:min-w-md max-w-full sm:max-w-full max-h-96 ">
             <img
               className="rounded-full h-40 w-40 sm:h-80 sm:w-80"
@@ -78,13 +79,29 @@ export default function Home() {
             alias consequatur aut perferendis doloribus asperiores repellat.
           </div>
         </div>
-        <div className="items-center justify-center w-full md:w-3/4 lg:w-2/3">
-          <img
-            className="rounded-xl"
-            src=".\Part-time-res.png"
-            alt="Quinn Resume"
-            loading="eager"
-          />
+        {/* Resume */}
+        <div className="w-auto bg-blue-100 dark:bg-slate-700 flex flex-col items-center py-6 lg:rounded-lg lg:mx-4">
+          <div className="text-4xl font-semibold mb-6">Resume</div>
+          <div className="mx-1">
+            <img
+              className="rounded-xl"
+              src=".\Part-time-res.png"
+              alt="Quinn's Resume"
+              loading="lazy"
+            />
+          </div>
+          <div className="mt-6 flex justify-center">
+            <a
+              href="./PT-Resume-New.pdf"
+              download
+              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v11m0 0l3.75-3.75M12 15.5l-3.75-3.75M21 19.5a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 19.5v-15A2.25 2.25 0 015.25 2.25h13.5A2.25 2.25 0 0121 4.5v15z" />
+              </svg>
+              Download PDF
+            </a>
+          </div>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
