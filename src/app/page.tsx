@@ -1,12 +1,11 @@
 'use client';
 
-import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="font-sans grid grid-rows-[auto_1fr_20px] min-h-screen pb-10 gap-6 w-full">
+    <div id="home" className="font-sans grid grid-rows-[auto_1fr] min-h-screen gap-6 w-full">
       {/* Navbar Header */}
       <header className="sticky top-0 row-start-1 flex justify-between items-center py-2 px-4 bg-blue-200 dark:bg-slate-900 shadow-md relative">
         {/* Logo & Title */}
@@ -18,8 +17,8 @@ export default function Home() {
         <nav className="hidden sm:block">
           <ul className="flex gap-6 text-base font-medium">
             <li><a href="#home" className="hover:text-blue-600 transition-colors">Home</a></li>
-            <li><a href="#about" className="hover:text-blue-600 transition-colors">About</a></li>
-            <li><a href="#projects" className="hover:text-blue-600 transition-colors">Projects</a></li>
+            {/*<li><a href="#projects" className="hover:text-blue-600 transition-colors">Projects</a></li> */}
+            <li><a href="#resume" className="hover:text-blue-600 transition-colors">Resume</a></li>
             <li><a href="#contact" className="hover:text-blue-600 transition-colors">Contact</a></li>
           </ul>
         </nav>
@@ -40,8 +39,8 @@ export default function Home() {
           <nav className="absolute right-0 top-full w-48 bg-blue-200 dark:bg-slate-900 shadow-lg rounded-b-xl z-10 sm:hidden">
             <ul className="flex flex-col gap-4 p-4 text-base font-medium">
               <li><a href="#home" className="hover:text-blue-600 transition-colors" onClick={() => setMenuOpen(false)}>Home</a></li>
-              <li><a href="#about" className="hover:text-blue-600 transition-colors" onClick={() => setMenuOpen(false)}>About</a></li>
-              <li><a href="#projects" className="hover:text-blue-600 transition-colors" onClick={() => setMenuOpen(false)}>Projects</a></li>
+              {/*<li><a href="#projects" className="hover:text-blue-600 transition-colors" onClick={() => setMenuOpen(false)}>Projects</a></li>*/}
+              <li><a href="#resume" className="hover:text-blue-600 transition-colors" onClick={() => setMenuOpen(false)}>Resume</a></li>
               <li><a href="#contact" className="hover:text-blue-600 transition-colors" onClick={() => setMenuOpen(false)}>Contact</a></li>
             </ul>
           </nav>
@@ -50,7 +49,7 @@ export default function Home() {
       <main className="flex grid gap-4 row-start-2 items-center justify-center w-full">
         {/* Home */}
         <div className="md:justify-start md:items-start max-w-7xl mx-auto px-4">
-          <div className="flex items-center md:float-left gap-2 p-3 sm:mr-6 mb-4 bg-blue-100 dark:bg-slate-700 rounded-xl min-w-[20px] md:min-w-md max-w-full sm:max-w-full max-h-96 ">
+          <div className="flex items-center md:float-left gap-2 p-3 sm:mr-6 mb-4 shadow-lg bg-blue-100 dark:bg-slate-800 rounded-xl min-w-[20px] md:min-w-md max-w-full sm:max-w-full max-h-96 ">
             <img
               className="rounded-full h-40 w-40 sm:h-80 sm:w-80"
               src="./QB-Professional.jpg"
@@ -80,9 +79,9 @@ export default function Home() {
           </div>
         </div>
         {/* Resume */}
-        <div className="w-auto bg-blue-100 dark:bg-slate-700 flex flex-col items-center py-6 lg:rounded-lg lg:mx-4">
+        <div id="resume" className="w-auto bg-blue-100 dark:bg-slate-800 flex flex-col items-center py-6 lg:rounded-lg lg:shadow-lg lg:mx-4">
           <div className="text-4xl font-semibold mb-6">Resume</div>
-          <div className="mx-1">
+          <div className="mx-1 shadow-md rounded-xl">
             <img
               className="rounded-xl"
               src=".\Part-time-res.png"
@@ -97,45 +96,43 @@ export default function Home() {
               download
               className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 shadow-lg">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v11m0 0l3.75-3.75M12 15.5l-3.75-3.75M21 19.5a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 19.5v-15A2.25 2.25 0 015.25 2.25h13.5A2.25 2.25 0 0121 4.5v15z" />
               </svg>
               Download PDF
             </a>
           </div>
         </div>
-        {/* Contacts */}
-        <div className="w-auto flex flex-col items-center py-6 lg:rounded-lg lg:mx-4">
+        {/* Contact */}
+        <div id="contact" className="w-auto flex flex-col items-center mx-4 py-4 lg:rounded-lg">
           <div className="text-4xl font-semibold mb-6">Contact Me!</div>
-          <div className="w-full max-w-xl bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 flex flex-col items-center gap-6 mx-auto">
+          <div className="w-full max-w-xl bg-blue-100 dark:bg-slate-800 rounded-xl shadow-lg p-8 flex flex-col items-center gap-6 mx-auto">
             <div className="flex gap-6 mt-2">
               <a href="mailto:quinn.l.battle@gmail.com" className="text-blue-600 hover:text-blue-800" aria-label="Email">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-.659 1.591l-7.091 7.091a2.25 2.25 0 01-3.182 0L3.409 8.584A2.25 2.25 0 012.75 6.993V6.75" />
                 </svg>
               </a>
-              <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/quinnbattle" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800" aria-label="LinkedIn">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-7 h-7">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/>
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z" />
                 </svg>
               </a>
               <a href="https://github.com/q-bat" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800" aria-label="GitHub">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-7 h-7">
-                  <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/>
+                  <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z" />
                 </svg>
               </a>
               <a href="tel:9203288272" className="text-blue-600 hover:text-blue-800 flex items-center gap-2" aria-label="Call Quinn">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15 .621 0 1.125-.504 1.125-1.125v-2.25a1.125 1.125 0 00-1.012-1.12l-3.375-.375a1.125 1.125 0 00-1.13.637l-.75 1.5a12.042 12.042 0 01-5.25-5.25l1.5-.75a1.125 1.125 0 00.637-1.13l-.375-3.375A1.125 1.125 0 007.125 4.5h-2.25C4.504 4.5 4 5.004 4 5.625z" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-7 h-7">
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22 2 13.93 2 4.5a1 1 0 011-1H6.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" />
                 </svg>
-                <span className="hidden sm:inline">Call: 920-328-8272</span>
+                <span className="hidden sm:inline">Call/Text: 920-328-8272</span>
               </a>
             </div>
           </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-      </footer>
     </div>
   );
 }
