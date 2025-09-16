@@ -62,11 +62,11 @@ export default function Home() {
             </div>
           </div>
           <div className="indent-8">
-            Hi! I'm Quinn, a passionate software developer with a knack for creating efficient and user-friendly web
+            Hi! I&apos;m Quinn, a passionate software developer with a knack for creating efficient and user-friendly web
              applications. With a strong foundation in front-end technologies, I enjoy bringing ideas to life through
-             code. I particularly excel with Javascript, HTML, Tailwind CSS, React, and Next.js. When I'm not coding,
+             code. I particularly excel with Javascript, HTML, Tailwind CSS, React, and Next.js. When I&apos;m not coding,
              you can find me hitting the gym, playing Dungeons and Dragons, and spending time with friends and family.
-             Let's connect and build something amazing together!
+             Let&apos;s connect and build something amazing together!
           </div>
         </div>
         {/* Resume */}
