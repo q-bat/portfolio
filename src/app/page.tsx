@@ -51,7 +51,7 @@ export default function Home() {
         <div className="md:justify-start md:items-start max-w-7xl mx-auto px-4">
           <div className="flex items-center md:float-left gap-2 p-3 sm:mr-6 mb-4 shadow-lg bg-blue-100 dark:bg-slate-800 rounded-xl min-w-[20px] md:min-w-md max-w-full sm:max-w-full max-h-96 ">
             <img
-              className="rounded-full h-40 w-40 sm:h-80 sm:w-80"
+              className="rounded-full h-36 w-36 sm:h-60 sm:w-60 md:h-80 md:w-80"
               src="./QB-Professional.jpg"
               alt="Quinn Professional pic"
               loading="eager"
@@ -61,30 +61,21 @@ export default function Home() {
               <span className="text-sm sm:text-lg font-semibold">Software Developer</span>
             </div>
           </div>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. At vero eos et accusamus et iusto odio
-            dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et
-            quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-            officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
-            est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque
-            nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
-            omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum
-            necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-            Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
-            alias consequatur aut perferendis doloribus asperiores repellat.
+          <div className="indent-8">
+            Hi! I'm Quinn, a passionate software developer with a knack for creating efficient and user-friendly web
+             applications. With a strong foundation in front-end technologies, I enjoy bringing ideas to life through
+             code. I particularly excel with Javascript, HTML, Tailwind CSS, React, and Next.js. When I'm not coding,
+             you can find me hitting the gym, playing Dungeons and Dragons, and spending time with friends and family.
+             Let's connect and build something amazing together!
           </div>
         </div>
         {/* Resume */}
         <div id="resume" className="w-auto bg-blue-100 dark:bg-slate-800 flex flex-col items-center py-6 lg:rounded-lg lg:shadow-lg lg:mx-4">
           <div className="text-4xl font-semibold mb-6">Resume</div>
-          <div className="mx-1 shadow-md rounded-xl">
+          <div className="mx-1 shadow-md rounded-xl w-full flex justify-center">
             <img
-              className="rounded-xl"
-              src=".\Part-time-res.png"
+              className="rounded-xl w-full max-w-6xl h-auto p-1"
+              src=".\PT-Resume.jpg"
               alt="Quinn's Resume"
               loading="lazy"
             />
@@ -92,7 +83,7 @@ export default function Home() {
           {/* Download Link */}
           <div className="mt-6 flex justify-center">
             <a
-              href="./PT-Resume-New.pdf"
+              href="./PT-Resume.pdf"
               download
               className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
             >
