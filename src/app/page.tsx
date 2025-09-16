@@ -36,7 +36,7 @@ export default function Home() {
         </button>
         {/* Mobile Nav Drawer */}
         {menuOpen && (
-          <nav className="absolute right-0 top-full w-48 bg-blue-200 dark:bg-slate-900 shadow-lg rounded-b-xl z-10 sm:hidden">
+          <nav className="absolute right-0 top-full w-30 bg-blue-200 dark:bg-slate-900 shadow-lg rounded-b-xl z-10 sm:hidden">
             <ul className="flex flex-col gap-4 p-4 text-base font-medium">
               <li><a href="#home" className="hover:text-blue-600 transition-colors" onClick={() => setMenuOpen(false)}>Home</a></li>
               {/*<li><a href="#projects" className="hover:text-blue-600 transition-colors" onClick={() => setMenuOpen(false)}>Projects</a></li>*/}
