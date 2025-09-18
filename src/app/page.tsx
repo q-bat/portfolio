@@ -61,10 +61,11 @@ export default function Home() {
               <span className="text-sm sm:text-lg font-semibold">Software Developer</span>
             </div>
           </div>
-          <div className="indent-8">
+          <div>
             Hi! I&apos;m Quinn, a passionate software developer with a knack for creating efficient and user-friendly web
              applications. With a strong foundation in front-end technologies, I enjoy bringing ideas to life through
-             code. I particularly excel with Javascript, HTML, Tailwind CSS, React, and Next.js. When I&apos;m not coding,
+             code. I particularly excel with Javascript, HTML, Tailwind CSS, React, and Next.js. In fact, I used
+              those technologies to create this web page! When I&apos;m not coding,
              you can find me hitting the gym, playing Dungeons and Dragons, and spending time with friends and family.
              Let&apos;s connect and build something amazing together!
           </div>
